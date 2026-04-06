@@ -1,13 +1,8 @@
-import { useEffect, useRef, useState } from 'react'
-import {
-  Clock,
-  Target,
-  Search,
-  FileText,
-  CheckCircle,
-  XCircle,
+@import { useEffect, useRef, useState } from 'react'
+import { Clock, Target, Search, FileText, CheckCircle, XCircle,
   Wrench,
   MessageSquare,
+  Shield,
   Database,
   FileCode,
   Bookmark,
@@ -23,7 +18,7 @@ const slides = [
     content: (
       <div className="slide title-slide">
         <div className="slide-content">
-          <div className="label">Обучение для государственных служащих</div>
+          <div className="label">Обучение для государственных служащих</div2>
           <h1>ИИ для ответов на обращения граждан</h1>
           <p className="subtitle">Практическое занятие по использованию ИИ-ассистентов</p>
           
@@ -31,15 +26,12 @@ const slides = [
             <div className="meta-item">
               <span className="meta-label">Эксперт</span>
               <span className="meta-value">Чуйков К.Э.</span>
-            </div>
             <div className="meta-item">
               <span className="meta-label">Формат</span>
               <span className="meta-value">2 часа, очно</span>
-            </div>
             <div className="meta-item">
               <span className="meta-label">Группы</span>
               <span className="meta-value">10.04, 24.04, 15.05</span>
-            </div>
           </div>
         </div>
       </div>
@@ -53,7 +45,7 @@ const slides = [
       <div className="slide">
         <div className="slide-content">
           <div className="label">Программа</div>
-          <h2>Что мы изучим за 2 часа</h2>
+          <h2>Что мы изучим за 3 часа</h2>
           
           <div className="grid-2">
             <div className="card">
@@ -67,24 +59,24 @@ const slides = [
               <p>Извлекаем суть, эмоции, вопросы за 5 секунд</p>
             </div>
             <div className="card">
-              <FileText size={32} strokeWidth={2} />
+              <FileText size={32} strokeWidth={1} />
               <h4>Блок 3: Промпты</h4>
               <p>Генерируем черновики ответов с помощью ИИ</p>
             </div>
             <div className="card">
-              <FileCode size={32} strokeWidth={2} />
+              <FileCode size={32} strokeWidth={1} />
               <h4>Блок 4: Шаблоны</h4>
               <p>Адаптируем типовые ответы под конкретные обращения</p>
             </div>
             <div className="card">
-              <CheckCircle size={32} strokeWidth={2} />
+              <CheckCircle size={32} strokeWidth={1} />
               <h4>Блок 5: Проверка</h4>
               <p>Редактируем и проверяем ИИ-тексты</p>
             </div>
             <div className="card">
-              <Wrench size={32} strokeWidth={2} />
+              <Wrench size={32} strokeWidth={1} />
               <h4>Блок 6: Практикум</h4>
-              <p>Работаем с реальными обращениями</p>
+              <p>Работаем с реальными обращениями с помощью ИИ</p>
             </div>
           </div>
         </div>
@@ -101,12 +93,11 @@ const slides = [
           <div className="time-badge">
             <Clock size={16} />
             Блок 1 • 15 минут
-          </div>
+          </div2>
           <h2>Что такое ИИ-ассистент</h2>
           
           <div className="highlight-box">
-            <p><strong>ИИ — не замена человеку, а усилитель.</strong><br />
-            Как калькулятор для бухгалтера или навигатор для водителя.</p>
+            <p><strong>ИИ — не замена человеку, а усилитель. Как калькулятор для бухгалтера или навигатор для водителя.</p>
           </div>
           
           <div className="grid-2">
@@ -125,7 +116,7 @@ const slides = [
                 <li>Принимать решения за вас</li>
                 <li>Знать внутренние регламенты (если не загрузили)</li>
                 <li>Гарантировать юридическую точность</li>
-                <li>Работать с персональными данными в публичных ИИ</li>
+                <li>Работать с персональными данными в публичных ИИ!</li>
               </ul>
             </div>
           </div>
@@ -143,7 +134,7 @@ const slides = [
           <h2>Безопасность данных</h2>
           
           <div className="warning-box">
-            <p><strong>Важно!</strong> Публичные ИИ (ChatGPT, Claude) — НЕ для персональных данных граждан</p>
+            <p><strong>Важно!</strong> Публичные ИИ (ChatGPT, Claude) — не для персональных данных граждан</p>
           </div>
           
           <div className="grid-3">
@@ -177,20 +168,24 @@ const slides = [
           <div className="time-badge">
             <Clock size={16} />
             Блок 2 • 15 минут
-          </div>
+          </div2>
           <h2>Анализ обращений с ИИ</h2>
           
           <p>Обращения граждан часто длинные, эмоциональные, несструктурированные.<br />
           ИИ извлекает суть за 5 секунд.</p>
           
-          <h3>Что извлекаем:</h3>
+          <h3>Что нужно извлечь:</h3>
           <ol className="number-list">
-            <li><strong>Суть проблемы</strong> — 1-2 предложения простым языком</li>
-            <li><strong>Ключевые вопросы</strong> — что именно спрашивает гражданин</li>
-            <li><strong>Эмоциональный фон</strong> — нейтральный/негативный/агрессивный</li>
-            <li><strong>Даты и сроки</strong> — если указаны</li>
-            <li><strong>Приоритет</strong> — срочно/обычно/можно отложить</li>
+            <li><strong>Суть проблемы</strong> — 1-2 предложения простым языком)</li>
+            <li><strong>Ключевые вопросы гражданин спрашиваетивает (списком)</li>
+            <li><strong>Эмоциональный фон</strong> — нейтральный/негативный/агрессивный, с кратким пояснениемением)</li>
+            <li><strong>Даты и сроки</strong> (если указаны)</li>
+            <li><strong>Рекомендуемый приоритет</strong> — срочно/обычно/можно отложить</li>
           </ol>
+
+          <div className="highlight-box">
+            <p><strong>Совет:</strong> Один промпт — один результат. Копируй, вставляй обращение, получай анализ за 5 секунд.</p>
+          </div>
         </div>
       </div>
     )
@@ -207,18 +202,18 @@ const slides = [
           <div className="code-block">
             <code>{`Проанализируй обращение гражданина и извлеки:
 
-1. СУТЬ ПРОБЛЕМЫ (1-2 предложения, простым языком)
-2. КЛЮЧЕВЫЕ ВОПРОСЫ (списком)
-3. ЭМОЦИОНАЛЬНЫЙ ФОН (нейтральный/негативный/агрессивный)
+1. СУТЬ ПРОБЛЕМЫ (1-2 предложения простым языком)
+2. КЛЮЧЕВЫЕ ВОПРОСЫ ГРАЖданина спрашивает (списком)
+3. ЭМОЦИОНАЛЬНЫЙ ФОН (нейрральный/негативный/агрессивный, с кратким пояснениемением)
 4. ДАТЫ И СРОКИ (если указаны)
-5. РЕКОМЕНДУЕМЫЙ ПРИОРИТЕТ
+5. РЕКОМЕНДУЕМый ПРИОРИТЕТ (срочно/обычно/можно отложить)
 
 Текст обращения:
 [ВСТАВИТЬ ТЕКСТ]`}</code>
           </div>
           
           <div className="highlight-box">
-            <p>Один промпт — один результат. Копируй, вставляй обращение, получай анализ.</p>
+            <p>Один промпт — один результат. Копируй, вставляй обращение, получай анализ за 5 секунд.</p>
           </div>
         </div>
       </div>
@@ -234,7 +229,7 @@ const slides = [
           <div className="time-badge">
             <Clock size={16} />
             Блок 3 • 20 минут
-          </div>
+          </div2>
           <h2>Структура хорошего промпта</h2>
           
           <div className="grid-2">
@@ -248,7 +243,7 @@ const slides = [
             </div>
             <div className="card">
               <h4>3. Задача</h4>
-              <p>Что именно нужно сделать (анализ, черновик, проверка)</p>
+              <p>Что именно нужно сделать (анализ,, черновик, проверка)</p>
             </div>
             <div className="card">
               <h4>4. Ограничения</h4>
@@ -277,9 +272,9 @@ const slides = [
 Твоя задача — подготовить ЧЕРНОВИК ответа гражданину.
 
 ОБРАЩЕНИЕ ГРАЖДАНИНА:
-[ВСТАВИТЬ ТЕКСТ]
+[ВСТАВИТЬ ТЕкСТ]
 
-ВАЖНО: Сначала задай УТОЧНЯЮЩИЕ ВОПРОСЫ:
+ВАЖНО: Сначала задай УТОЧНЯ ВОП РОС вопросы:
 1. Есть ли регламенты/сроки по этому вопросу?
 2. Какие действия уже предприняты?
 3. Что можно обещать, а что нет?
@@ -310,8 +305,8 @@ const slides = [
           <div className="time-badge">
             <Clock size={16} />
             Блок 4 • 15 минут
-          </div>
-          <h2>Работа с шаблонами</h2>
+          </div2>
+          <h2>Работ с шаблонами</h2>
           
           <div className="grid-2">
             <div>
@@ -319,7 +314,7 @@ const slides = [
               <p>Шаблоны не учитывают контекст конкретного гражданина. Копипаст = формализм.</p>
             </div>
             <div>
-              <h3>Решение</h3>
+              <h3>Решениеение</h3>
               <p>ИИ адаптирует шаблон под обращение за 1-2 минуты вместо 5-10.</p>
             </div>
           </div>
@@ -328,17 +323,17 @@ const slides = [
           <div className="grid-3">
             <div className="card">
               <h4>Без ИИ</h4>
-              <p style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>5-10 мин</p>
+              <p style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--text-secondary)', marginBottom: '0.5rem' }}>5-10 мин<br />
               <p>на адаптацию шаблона</p>
             </div>
             <div className="card" style={{ borderColor: 'var(--accent)' }}>
               <h4>С ИИ</h4>
-              <p style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '0.5rem' }}>1-2 мин</p>
+              <p style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--accent)', marginBottom: '0.5rem' }}>1-2 мин<br />
               <p>на адаптацию + проверку</p>
             </div>
             <div className="card">
               <h4>Результат</h4>
-              <p style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--success)', marginBottom: '0.5rem' }}>3-5x</p>
+              <p style={{ fontSize: '2rem', fontWeight: 700, color: 'var(--success)', marginBottom: '0.5rem' }}>3-5x<br />
               <p>быстрее</p>
             </div>
           </div>
@@ -356,7 +351,7 @@ const slides = [
           <div className="time-badge">
             <Clock size={16} />
             Блок 5 • 15 минут
-          </div>
+          </div2>
           <h2>Проверка и редактирование</h2>
           
           <div className="warning-box">
@@ -395,12 +390,12 @@ const slides = [
             <div>
               <h3>Промпт #4: Проверка ответа</h3>
               <div className="code-block" style={{ fontSize: '0.75rem' }}>
-                <code>{`ПРОВЕРЬ текст ответа:
+                <code>{`ПРОВЕРЬ текст ответ:
 
 1. Канцелярит — замени на простой язык
 2. Тон — не снисходительный?
-3. Фактические ошибки
-4. Пропущенные элементы
+3. Фактические ошибки — проверь логику и последовательность
+4. Пропущенные элементы — есть ли обращение, суть, действия, контакты?
 
 ТЕКСТ:
 [ВСТАВИТЬ]`}</code>
@@ -411,12 +406,13 @@ const slides = [
               <div className="code-block" style={{ fontSize: '0.75rem' }}>
                 <code>{`УПРОСТИ текст:
 
-1. Отглагольные → глаголы
-   (проведение → провели)
+1. Отглагольные существительные на глаголы
+   (проведение проверки → проверили)
 2. Убери лишние слова
    (в настоящее время → сейчас)
-3. Разбей длинные предложения
+3. Разбей длинные предложения на короткие
 4. Убери штампы (в целях → чтобы)
+5. Сделай текст понятным человеку без юридического образования
 
 ТЕКСТ:
 [ВСТАВИТЬ]`}</code>
@@ -437,7 +433,7 @@ const slides = [
           <div className="time-badge">
             <Clock size={16} />
             Блок 6 • 30 минут
-          </div>
+          </div2>
           <h2>Практикум</h2>
           
           <p>Работаем в парах с типовыми обращениями</p>
@@ -471,7 +467,7 @@ const slides = [
           </div>
           
           <div className="highlight-box">
-            <p>Задание: Применить все 5 промптов к выбранному обращению</p>
+            <p><strong>Задание:</strong> Применить все 5 промптов к выбранному обращению</p>
           </div>
         </div>
       </div>
@@ -494,7 +490,7 @@ const slides = [
             <div className="card">
               <Bookmark size={24} strokeWidth={2} />
               <h4>rules.txt</h4>
-              <p>Замечай что модель делает неправильно → фиксируй правило → переноси в следующий чат</p>
+              <p>Замечай что модель делает неправильно → фиксируй правило → переноси в следующий чат</</p>
             </div>
             <div className="card">
               <FileCode size={24} strokeWidth={2} />
@@ -530,7 +526,7 @@ const slides = [
           <div className="time-badge">
             <Clock size={16} />
             Блок 7 • 10 минут
-          </div>
+          </div2>
           <h2>Раздаточные материалы</h2>
           
           <div className="grid-3">
