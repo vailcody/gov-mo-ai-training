@@ -8,7 +8,6 @@ import {
   XCircle,
   Wrench,
   MessageSquare,
-  Shield,
   Database,
   FileCode,
   Bookmark,
