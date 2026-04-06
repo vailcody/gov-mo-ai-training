@@ -197,7 +197,6 @@ p {
 .code-block code {
   color: #e6edf3;
   white-space: pre-wrap;
-  display: block;
 }
 
 .code-comment {
