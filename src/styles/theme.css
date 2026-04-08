@@ -1,0 +1,63 @@
+/* ===========================================
+   CSS CUSTOM PROPERTIES — SWISS MODERN THEME
+   Archivo display + Nunito body
+   White/light palette, accent color
+   =========================================== */
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f7f7f7;
+  --text-primary: #000000;
+  --text-secondary: #555555;
+  --accent: #2563eb;
+  --grid: rgba(0, 0, 0, 0.05);
+
+  --font-display: 'Archivo', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+
+  --slide-padding: clamp(2rem, 4vw, 3.5rem);
+  --duration: 0.35s;
+  --ease: cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* ===========================================
+   RESET & BASE
+   =========================================== */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===========================================
+   TYPOGRAPHY — strong hierarchy with Archivo
+   =========================================== */
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(4rem, 12vw, 10rem);
+  font-weight: 900;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  margin-bottom: 1rem;
+}

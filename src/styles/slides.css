@@ -1,0 +1,672 @@
+/* ===========================================
+   GRID OVERLAY — visible Swiss grid
+   =========================================== */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ===========================================
+   PRESENTATION SHELL — progress, dots, hint
+   =========================================== */
+.presentation-shell {
+  overflow-x: hidden;
+}
+
+/* ===========================================
+   PROGRESS BAR — top of viewport
+   =========================================== */
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--accent);
+  width: 0%;
+  z-index: 1000;
+  transition: width 0.3s linear;
+}
+
+/* ===========================================
+   NAVIGATION DOTS — right side
+   =========================================== */
+.nav-dots {
+  position: fixed;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
+
+.nav-dot {
+  width: 10px;
+  height: 10px;
+  border: 2px solid var(--text-primary);
+  background: transparent;
+  cursor: pointer;
+  transition: background var(--duration) var(--ease), transform var(--duration) var(--ease);
+  padding: 0;
+}
+
+.nav-dot.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  transform: scale(1.3);
+}
+
+.nav-dot:hover {
+  border-color: var(--accent);
+}
+
+/* ===========================================
+   KEYBOARD HINT
+   =========================================== */
+.keyboard-hint {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 1s ease;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.keyboard-hint.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ===========================================
+   SLIDE CONTAINER
+   =========================================== */
+.slide {
+  min-height: 100vh;
+  padding: var(--slide-padding);
+  padding-right: 4rem;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.slide:nth-child(even of .slide) {
+  background: var(--bg-secondary);
+}
+
+.slide-even {
+  background: var(--bg-secondary);
+}
+
+/* ===========================================
+   SLIDE NUMBER — top-left corner
+   =========================================== */
+.slide-number {
+  position: absolute;
+  top: var(--slide-padding);
+  left: var(--slide-padding);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+/* ===========================================
+   SUBTITLE & META
+   =========================================== */
+.subtitle {
+  font-family: var(--font-body);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 400;
+  color: var(--text-secondary);
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 0.5rem;
+}
+
+.meta {
+  font-family: var(--font-body);
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  color: var(--text-secondary);
+  margin-top: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+/* ===========================================
+   CONTENT LIST
+   =========================================== */
+.content-list {
+  list-style: none;
+  padding: 0;
+  max-width: 100%;
+}
+
+.content-list li {
+  font-size: clamp(1.2rem, 2.2vw, 1.6rem);
+  line-height: 1.6;
+  padding: 0.6rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--text-primary);
+}
+
+.content-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  transform: translateY(-50%);
+}
+
+/* ===========================================
+   CARD GRIDS
+   =========================================== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: var(--bg-primary);
+  border: 2px solid var(--text-primary);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide-even .card {
+  background: var(--bg-secondary);
+}
+
+.card h3 {
+  text-transform: uppercase;
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.card p, .card ul {
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.card ul li {
+  padding: 0.2rem 0;
+}
+
+.card ul li::before {
+  display: none;
+}
+
+.card.highlighted {
+  border-color: var(--accent);
+}
+
+.card.highlighted::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--accent);
+}
+
+/* 3-column cards */
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+/* ===========================================
+   PLAN BLOCKS
+   =========================================== */
+.plan-blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+.plan-block {
+  background: var(--bg-secondary);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  padding: 1.2rem 1.4rem;
+}
+
+.plan-block-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.plan-block-num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 0.85rem;
+  color: var(--accent);
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.plan-block h3 {
+  font-family: var(--font-display);
+  font-size: clamp(0.9rem, 1.4vw, 1.1rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  flex: 1;
+  margin: 0;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.plan-block-time {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.plan-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.plan-block ul li {
+  font-family: var(--font-body);
+  font-size: clamp(0.8rem, 1.2vw, 1rem);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  padding: 0.2rem 0;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.plan-block ul li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 4px;
+  height: 4px;
+  background: var(--accent);
+  border-radius: 50%;
+}
+
+/* ===========================================
+   NUMBERED STEPS
+   =========================================== */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 100%;
+  margin-top: 1.5rem;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.step-number {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1;
+  color: var(--accent);
+  flex-shrink: 0;
+  min-width: 80px;
+}
+
+.step-text {
+  font-size: clamp(1.4rem, 2.8vw, 2rem);
+  line-height: 1.4;
+}
+
+.step-desc {
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-top: 0.3rem;
+}
+
+/* ===========================================
+   CENTERED DRAMATIC TEXT
+   =========================================== */
+.center-slide {
+  align-items: center;
+  text-align: center;
+}
+
+.dramatic {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(5rem, 15vw, 14rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+/* ===========================================
+   BIG TEXT
+   =========================================== */
+.big-text {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(3rem, 8vw, 7rem);
+  text-transform: uppercase;
+  margin-top: 2rem;
+  color: var(--accent);
+}
+
+/* ===========================================
+   GEOMETRIC DECORATIONS
+   =========================================== */
+.geo-square {
+  position: absolute;
+  background: var(--accent);
+  z-index: -1;
+}
+
+.geo-line {
+  position: absolute;
+  background: var(--text-primary);
+  z-index: -1;
+}
+
+.geo-outline {
+  position: absolute;
+  border: 2px solid var(--text-primary);
+  z-index: -1;
+}
+
+/* ===========================================
+   ANIMATIONS — triggered by .visible
+   =========================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--duration) var(--ease),
+              transform var(--duration) var(--ease);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity var(--duration) var(--ease),
+              transform var(--duration) var(--ease);
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity var(--duration) var(--ease),
+              transform var(--duration) var(--ease);
+}
+
+.slide.visible .reveal,
+.slide.visible .reveal-left,
+.slide.visible .reveal-scale {
+  opacity: 1;
+  transform: none;
+}
+
+/* Stagger children */
+.slide.visible .reveal:nth-child(1),
+.slide.visible .reveal-left:nth-child(1),
+.slide.visible .reveal-scale:nth-child(1) { transition-delay: 0.05s; }
+.slide.visible .reveal:nth-child(2),
+.slide.visible .reveal-left:nth-child(2),
+.slide.visible .reveal-scale:nth-child(2) { transition-delay: 0.12s; }
+.slide.visible .reveal:nth-child(3),
+.slide.visible .reveal-left:nth-child(3),
+.slide.visible .reveal-scale:nth-child(3) { transition-delay: 0.19s; }
+.slide.visible .reveal:nth-child(4),
+.slide.visible .reveal-left:nth-child(4),
+.slide.visible .reveal-scale:nth-child(4) { transition-delay: 0.26s; }
+.slide.visible .reveal:nth-child(5),
+.slide.visible .reveal-left:nth-child(5),
+.slide.visible .reveal-scale:nth-child(5) { transition-delay: 0.33s; }
+.slide.visible .reveal:nth-child(6),
+.slide.visible .reveal-left:nth-child(6),
+.slide.visible .reveal-scale:nth-child(6) { transition-delay: 0.40s; }
+
+/* Stagger for list items */
+.stagger-list li {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity var(--duration) var(--ease),
+              transform var(--duration) var(--ease);
+}
+.slide.visible .stagger-list li {
+  opacity: 1;
+  transform: none;
+}
+.slide.visible .stagger-list li:nth-child(1) { transition-delay: 0.1s; }
+.slide.visible .stagger-list li:nth-child(2) { transition-delay: 0.17s; }
+.slide.visible .stagger-list li:nth-child(3) { transition-delay: 0.24s; }
+.slide.visible .stagger-list li:nth-child(4) { transition-delay: 0.31s; }
+.slide.visible .stagger-list li:nth-child(5) { transition-delay: 0.38s; }
+.slide.visible .stagger-list li:nth-child(6) { transition-delay: 0.45s; }
+
+/* Card stagger */
+.card, .cost-card, .mode-card, .strategy-card, .plan-block {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity var(--duration) var(--ease),
+              transform var(--duration) var(--ease);
+}
+.slide.visible .card:nth-child(1),
+.slide.visible .cost-card:nth-child(1),
+.slide.visible .mode-card:nth-child(1),
+.slide.visible .strategy-card:nth-child(1),
+.slide.visible .plan-block:nth-child(1) { transition-delay: 0.1s; }
+.slide.visible .card:nth-child(2),
+.slide.visible .cost-card:nth-child(2),
+.slide.visible .mode-card:nth-child(2),
+.slide.visible .strategy-card:nth-child(2),
+.slide.visible .plan-block:nth-child(2) { transition-delay: 0.2s; }
+.slide.visible .card:nth-child(3),
+.slide.visible .cost-card:nth-child(3),
+.slide.visible .mode-card:nth-child(3),
+.slide.visible .strategy-card:nth-child(3),
+.slide.visible .plan-block:nth-child(3) { transition-delay: 0.3s; }
+.slide.visible .card:nth-child(4),
+.slide.visible .strategy-card:nth-child(4),
+.slide.visible .plan-block:nth-child(4) { transition-delay: 0.4s; }
+.slide.visible .card:nth-child(5),
+.slide.visible .plan-block:nth-child(5) { transition-delay: 0.5s; }
+.slide.visible .card,
+.slide.visible .cost-card,
+.slide.visible .mode-card,
+.slide.visible .strategy-card,
+.slide.visible .plan-block {
+  opacity: 1;
+  transform: none;
+}
+
+/* Steps stagger */
+.step {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity var(--duration) var(--ease),
+              transform var(--duration) var(--ease);
+}
+.slide.visible .step:nth-child(1) { transition-delay: 0.1s; }
+.slide.visible .step:nth-child(2) { transition-delay: 0.25s; }
+.slide.visible .step:nth-child(3) { transition-delay: 0.4s; }
+.slide.visible .step:nth-child(4) { transition-delay: 0.55s; }
+.slide.visible .step:nth-child(5) { transition-delay: 0.7s; }
+.slide.visible .step {
+  opacity: 1;
+  transform: none;
+}
+
+/* ===========================================
+   RESPONSIVE
+   =========================================== */
+@media (max-width: 768px) {
+  .nav-dots {
+    display: none;
+  }
+
+  .keyboard-hint {
+    display: none;
+  }
+
+  .slide {
+    padding-right: var(--slide-padding);
+  }
+
+  .card-grid, .strategy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-row, .mode-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-blocks {
+    grid-template-columns: 1fr;
+  }
+
+  .geo-square, .geo-line, .geo-outline {
+    display: none;
+  }
+
+  .step {
+    gap: 1rem;
+  }
+
+  .step-number {
+    width: 40px;
+    font-size: 2.5rem;
+  }
+}
+
+/* ===========================================
+   REDUCED MOTION — accessibility
+   =========================================== */
+@media (prefers-reduced-motion: reduce) {
+  .reveal, .reveal-left, .reveal-scale,
+  .card, .cost-card, .mode-card, .strategy-card, .step, .plan-block {
+    transition: opacity 0.2s ease !important;
+    transform: none !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ===========================================
+   TIMELINE
+   =========================================== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  max-width: 800px;
+}
+
+.timeline-item {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.timeline-year {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: var(--accent);
+  min-width: 80px;
+  text-align: right;
+}
+
+.timeline-content {
+  flex: 1;
+  border-left: 3px solid var(--accent);
+  padding-left: 1.5rem;
+}
+
+.timeline-content h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.6vw, 1.3rem);
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.timeline-content p {
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ===========================================
+   HIGHLIGHT BOX
+   =========================================== */
+.highlight-box {
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--accent);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  max-width: 100%;
+}
+
+.highlight-box p {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.5;
+}
