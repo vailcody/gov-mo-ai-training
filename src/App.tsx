@@ -4,6 +4,7 @@ import PresentationShell from './components/PresentationShell'
 
 // Import slides — order defines slide numbers (auto-computed via slideIndex)
 import Title from './lessons/ai-intro/slides/Title'
+import AboutAuthor from './lessons/ai-intro/slides/AboutAuthor'
 import Plan from './lessons/ai-intro/slides/Plan'
 import WhatIsAI from './lessons/ai-intro/slides/WhatIsAI'
 import History from './lessons/ai-intro/slides/History'
@@ -44,6 +45,7 @@ import Closing from './lessons/ai-intro/slides/Closing'
 
 const slides = [
   Title,
+  AboutAuthor,
   Plan,
   WhatIsAI,
   History,
