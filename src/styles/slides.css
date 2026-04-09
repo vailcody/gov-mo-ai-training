@@ -149,6 +149,7 @@ body::before {
 
 .title-subtitle {
   padding-left: 0;
+  margin-left: 0;
   align-self: flex-start;
   text-align: left;
   max-width: min(900px, 72vw);
