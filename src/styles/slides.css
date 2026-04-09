@@ -457,29 +457,83 @@ body::before {
 }
 
 /* ===========================================
-   PROMPT BOX
+   PROMPT CONTENT
    =========================================== */
-.prompt-box {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 8px;
-  padding: 0.75rem 1rem;
-  font-family: monospace;
-  font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+.prompt-intro {
+  margin-bottom: 1rem;
+}
+
+.prompt-compare {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.prompt-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--text-primary);
+  background: var(--bg-primary);
+  min-height: 100%;
+}
+
+.prompt-card.bad {
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.prompt-card.good {
+  border-color: var(--accent);
+}
+
+.prompt-card-label {
+  font-family: var(--font-display);
+  font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.9rem 1.1rem;
+  border-bottom: 2px solid currentColor;
+}
+
+.prompt-card.bad .prompt-card-label {
+  color: var(--text-secondary);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.prompt-card.good .prompt-card-label {
+  color: var(--accent);
+  background: rgba(37, 99, 235, 0.08);
+}
+
+.prompt-card-body {
+  padding: 1.1rem;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  flex: 1;
+}
+
+.prompt-card-body p {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  line-height: 1.65;
   color: var(--text-primary);
-  margin: 0.5rem 0;
+  margin: 0;
+  white-space: normal;
 }
 
-.result-bad {
-  color: #f87171;
-  font-size: clamp(0.9rem, 1.3vw, 1rem);
-  margin-top: 0.5rem;
+.prompt-card-result {
+  padding: 0.95rem 1.1rem 1.1rem;
+  font-size: clamp(0.95rem, 1.25vw, 1.05rem);
+  line-height: 1.55;
 }
 
-.result-good {
-  color: #34d399;
-  font-size: clamp(0.9rem, 1.3vw, 1rem);
-  margin-top: 0.5rem;
+.prompt-card.bad .prompt-card-result {
+  color: #b91c1c;
+}
+
+.prompt-card.good .prompt-card-result {
+  color: #166534;
 }
 
 /* ===========================================
@@ -662,6 +716,10 @@ body::before {
   }
 
   .plan-blocks {
+    grid-template-columns: 1fr;
+  }
+
+  .prompt-compare {
     grid-template-columns: 1fr;
   }
 
