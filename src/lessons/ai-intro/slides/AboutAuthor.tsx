@@ -11,7 +11,7 @@ export default function SlideAboutAuthor({ slideIndex }: SlideProps) {
       <span className="slide-number reveal">{num}</span>
       <div className="author-layout reveal">
         <div className="author-photo">
-          <img src={`${BASE.replace(/\/$/, '')}/author.jpg`} alt="Константин Чуйков" />
+          <img src={`${BASE}ai-intro/author.jpg`} alt="Константин Чуйков" />
         </div>
         <div className="author-info">
           <h2 style={{ marginBottom: '0.6rem' }}>Константин Чуйков</h2>
