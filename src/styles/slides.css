@@ -189,10 +189,11 @@ body::before {
    =========================================== */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
   max-width: 100%;
   margin-top: 1.5rem;
+  align-items: stretch;
 }
 
 .card {
@@ -201,6 +202,10 @@ body::before {
   padding: 1.5rem;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
 }
 
 .slide-even .card {
@@ -212,12 +217,13 @@ body::before {
   font-size: clamp(1.1rem, 1.8vw, 1.35rem);
   margin-bottom: 0.75rem;
   letter-spacing: 0.05em;
+  line-height: 1.2;
 }
 
 .card p, .card ul {
-  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  font-size: clamp(1rem, 1.45vw, 1.12rem);
   color: var(--text-secondary);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .card ul {
@@ -226,7 +232,8 @@ body::before {
 }
 
 .card ul li {
-  padding: 0.2rem 0;
+  padding: 0.3rem 0;
+  line-height: 1.5;
 }
 
 .card ul li::before {
@@ -344,40 +351,90 @@ body::before {
    NUMBERED STEPS
    =========================================== */
 .steps {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1.5rem;
   max-width: 100%;
   margin-top: 1.5rem;
+  align-items: stretch;
 }
 
 .step {
   display: flex;
-  align-items: center;
-  gap: 2rem;
-  margin-bottom: 0.5rem;
+  align-items: flex-start;
+  gap: 1.1rem;
+  margin-bottom: 0;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.02);
+  min-height: 100%;
 }
 
 .step-number {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  line-height: 1;
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  line-height: 0.95;
   color: var(--accent);
   flex-shrink: 0;
-  min-width: 80px;
+  min-width: 54px;
 }
 
 .step-text {
-  font-size: clamp(1.4rem, 2.8vw, 2rem);
-  line-height: 1.4;
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  line-height: 1.25;
+  font-family: var(--font-display);
+  font-weight: 800;
 }
 
 .step-desc {
-  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  font-size: clamp(0.95rem, 1.3vw, 1.05rem);
   color: var(--text-secondary);
-  line-height: 1.5;
-  margin-top: 0.3rem;
+  line-height: 1.6;
+  margin-top: 0.45rem;
+}
+
+/* ===========================================
+   PROMPT PRINCIPLES
+   =========================================== */
+.prompt-principles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.prompt-principle {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.prompt-principle-num {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  line-height: 1;
+  color: var(--accent);
+  min-width: 52px;
+  flex-shrink: 0;
+}
+
+.prompt-principle-content h3 {
+  margin-bottom: 0.45rem;
+  font-size: clamp(1.05rem, 1.7vw, 1.3rem);
+  text-transform: none;
+  letter-spacing: -0.01em;
+}
+
+.prompt-principle-content p {
+  font-size: clamp(0.95rem, 1.25vw, 1.05rem);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* ===========================================
@@ -719,7 +776,9 @@ body::before {
     grid-template-columns: 1fr;
   }
 
-  .prompt-compare {
+  .prompt-compare,
+  .steps,
+  .prompt-principles {
     grid-template-columns: 1fr;
   }
 
