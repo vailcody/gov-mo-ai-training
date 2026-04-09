@@ -30,6 +30,8 @@ import DemoChatGPT from './lessons/ai-intro/slides/DemoChatGPT'
 import Case1 from './lessons/ai-intro/slides/Case1'
 import Case2 from './lessons/ai-intro/slides/Case2'
 import RussianModels from './lessons/ai-intro/slides/RussianModels'
+import KodikTool from './lessons/ai-intro/slides/KodikTool'
+import OneShotFewShot from './lessons/ai-intro/slides/OneShotFewShot'
 import PromptEngineering from './lessons/ai-intro/slides/PromptEngineering'
 import PracticalTips from './lessons/ai-intro/slides/PracticalTips'
 import Checklist from './lessons/ai-intro/slides/Checklist'
@@ -68,6 +70,8 @@ const slides = [
   Case1,
   Case2,
   RussianModels,
+  KodikTool,
+  OneShotFewShot,
   PromptEngineering,
   PracticalTips,
   Checklist,
