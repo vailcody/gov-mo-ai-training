@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide29Checklist({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">30</span>
+      <span className="slide-number">31</span>
       <h2 className="reveal">Чек-лист: можно ли использовать ИИ?</h2>
 
       <div className="steps">

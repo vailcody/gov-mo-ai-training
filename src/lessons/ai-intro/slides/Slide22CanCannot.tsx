@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide20CanCannot({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">21</span>
+      <span className="slide-number">22</span>
       <h2 className="reveal">ИИ умеет / ИИ не умеет</h2>
 
       <div className="card-grid">

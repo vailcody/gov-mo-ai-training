@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide21BiasFairness({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">22</span>
+      <span className="slide-number">23</span>
       <h2 className="reveal">Предвзятость и справедливость</h2>
 
       <div className="highlight-box reveal">

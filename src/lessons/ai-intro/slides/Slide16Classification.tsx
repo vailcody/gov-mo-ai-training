@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide14Classification({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">15</span>
+      <span className="slide-number">16</span>
       <h2 className="reveal">Классификация обращений</h2>
 
       <div className="highlight-box reveal">

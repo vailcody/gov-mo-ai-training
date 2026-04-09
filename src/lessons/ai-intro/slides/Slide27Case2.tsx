@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide25Case2({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">26</span>
+      <span className="slide-number">27</span>
       <h2 className="reveal">Кейс: подготовка ответов</h2>
 
       <div className="highlight-box reveal">

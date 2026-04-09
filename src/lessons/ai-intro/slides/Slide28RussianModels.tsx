@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide26RussianModels({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">27</span>
+      <span className="slide-number">28</span>
       <h2 className="reveal">Российские решения</h2>
 
       <div className="highlight-box reveal">

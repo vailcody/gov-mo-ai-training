@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide31Ethics({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">32</span>
+      <span className="slide-number">33</span>
       <h2 className="reveal">Этика использования ИИ</h2>
 
       <div className="card-grid">
