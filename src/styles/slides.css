@@ -147,6 +147,13 @@ body::before {
   padding-left: var(--slide-padding);
 }
 
+.title-subtitle {
+  padding-left: 0;
+  align-self: flex-start;
+  text-align: left;
+  max-width: min(900px, 72vw);
+}
+
 .meta {
   font-family: var(--font-body);
   font-size: clamp(1.2rem, 2.2vw, 1.6rem);

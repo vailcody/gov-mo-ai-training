@@ -7,7 +7,7 @@ export default function SlideTitle({}: SlideProps) {
       <div className="geo-line" style={{ width: 200, height: 3, top: '20%', right: '8%' }} />
       <div className="geo-outline" style={{ width: 80, height: 80, top: '15%', right: '5%' }} />
       <h1 className="reveal">Искусственный интеллект</h1>
-      <p className="subtitle reveal">Лекция для инспекторов по работе с обращениями граждан в сфере ЖКХ</p>
+      <p className="subtitle title-subtitle reveal">Лекция для инспекторов по работе с обращениями граждан в сфере ЖКХ</p>
     </>
   )
 }
