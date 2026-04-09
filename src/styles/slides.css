@@ -384,7 +384,23 @@ body::before {
    CENTERED DRAMATIC TEXT
    =========================================== */
 .center-slide {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.center-slide .subtitle {
+  text-align: center;
+  align-self: center;
+  padding-left: 0;
+  max-width: min(900px, 80vw);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-slide .meta {
   text-align: center;
 }
 
