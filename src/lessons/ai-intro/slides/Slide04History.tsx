@@ -1,5 +1,7 @@
 import type { SlideProps } from '../../../components/PresentationShell'
 
+const BASE = import.meta.env.BASE_URL
+
 export default function Slide04History({}: SlideProps) {
   return (
     <>
@@ -8,7 +10,7 @@ export default function Slide04History({}: SlideProps) {
 
       <div className="history-layout reveal">
         <div className="history-photo">
-          <img src="/dartmouth-1956.jpg" alt="Дартмутская конференция 1956" />
+          <img src={`${BASE}ai-intro/dartmouth-1956.jpg`} alt="Дартмутская конференция 1956" />
           <p className="history-caption">Дартмутская конференция, 1956</p>
         </div>
         

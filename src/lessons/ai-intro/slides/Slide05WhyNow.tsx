@@ -1,5 +1,7 @@
 import type { SlideProps } from '../../../components/PresentationShell'
 
+const BASE = import.meta.env.BASE_URL
+
 export default function Slide05WhyNow({}: SlideProps) {
   return (
     <>
@@ -61,7 +63,7 @@ export default function Slide05WhyNow({}: SlideProps) {
 
         <div className="why-now-card">
           <div className="why-now-visual">
-            <img src="/nvidia-hgx.jpg" alt="NVIDIA HGX — 8 GPU для обучения ИИ" />
+            <img src={`${BASE}ai-intro/nvidia-hgx.jpg`} alt="NVIDIA HGX — 8 GPU для обучения ИИ" />
           </div>
           <div className="why-now-text">
             <h3>Вычислительные ресурсы</h3>

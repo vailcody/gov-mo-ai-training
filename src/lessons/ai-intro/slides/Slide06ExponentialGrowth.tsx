@@ -1,5 +1,7 @@
 import type { SlideProps } from '../../../components/PresentationShell'
 
+const BASE = import.meta.env.BASE_URL
+
 export default function Slide06ExponentialGrowth({}: SlideProps) {
   return (
     <>
@@ -8,7 +10,7 @@ export default function Slide06ExponentialGrowth({}: SlideProps) {
 
       <div className="exponential-layout reveal">
         <div className="exponential-chart">
-          <img src="/ai-exponential-growth.jpg" alt="Экспоненциальный рост возможностей ИИ" />
+          <img src={`${BASE}ai-intro/ai-exponential-growth.jpg`} alt="Экспоненциальный рост возможностей ИИ" />
         </div>
 
         <div className="explanation-block">
