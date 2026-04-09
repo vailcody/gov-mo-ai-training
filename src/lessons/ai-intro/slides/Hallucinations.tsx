@@ -18,6 +18,7 @@ export default function SlideHallucinations({ slideIndex }: SlideProps) {
             <li>Выдуманные судебные решения</li>
             <li>Неверные цитаты из документов</li>
             <li>Ложные ссылки на источники</li>
+            <li>Устаревшие сведения о законах и постановлениях</li>
           </ul>
         </div>
 
@@ -27,6 +28,7 @@ export default function SlideHallucinations({ slideIndex }: SlideProps) {
             <li>Всегда проверяйте факты</li>
             <li>Требуйте ссылки на источники</li>
             <li>Не доверяйте без проверки</li>
+            <li>Проверяйте актуальность законов и НПА отдельно</li>
             <li>Используйте ИИ как помощника, не как источник истины</li>
           </ul>
         </div>
