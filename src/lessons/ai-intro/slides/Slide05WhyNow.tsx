@@ -16,16 +16,28 @@ export default function Slide05WhyNow({}: SlideProps) {
             {/* Internet data growth chart */}
             <div className="data-chart">
               <div className="data-bar-row">
+                <span className="data-label">1995</span>
+                <div className="data-bar" style={{ width: '1%' }}><span></span></div>
+              </div>
+              <div className="data-bar-row">
+                <span className="data-label">2000</span>
+                <div className="data-bar" style={{ width: '3%' }}><span></span></div>
+              </div>
+              <div className="data-bar-row">
+                <span className="data-label">2005</span>
+                <div className="data-bar" style={{ width: '8%' }}><span></span></div>
+              </div>
+              <div className="data-bar-row">
                 <span className="data-label">2010</span>
-                <div className="data-bar" style={{ width: '8%' }}><span>2 ЗБ</span></div>
+                <div className="data-bar" style={{ width: '14%' }}><span>2 ЗБ</span></div>
               </div>
               <div className="data-bar-row">
                 <span className="data-label">2015</span>
-                <div className="data-bar" style={{ width: '18%' }}><span>15 ЗБ</span></div>
+                <div className="data-bar" style={{ width: '25%' }}><span>15 ЗБ</span></div>
               </div>
               <div className="data-bar-row">
                 <span className="data-label">2018</span>
-                <div className="data-bar" style={{ width: '33%' }}><span>33 ЗБ</span></div>
+                <div className="data-bar" style={{ width: '38%' }}><span>33 ЗБ</span></div>
               </div>
               <div className="data-bar-row">
                 <span className="data-label">2020</span>
