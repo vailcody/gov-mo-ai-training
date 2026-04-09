@@ -17,6 +17,8 @@ import NeuralNetwork from './lessons/ai-intro/slides/NeuralNetwork'
 import LLMExplained from './lessons/ai-intro/slides/LLMExplained'
 import WhatIsPrompt from './lessons/ai-intro/slides/WhatIsPrompt'
 import GoodPrompt from './lessons/ai-intro/slides/GoodPrompt'
+import ContextMemory from './lessons/ai-intro/slides/ContextMemory'
+import RulesFiles from './lessons/ai-intro/slides/RulesFiles'
 import Block3Title from './lessons/ai-intro/slides/Block3Title'
 import TextGeneration from './lessons/ai-intro/slides/TextGeneration'
 import Classification from './lessons/ai-intro/slides/Classification'
@@ -27,10 +29,8 @@ import Hallucinations from './lessons/ai-intro/slides/Hallucinations'
 import Privacy from './lessons/ai-intro/slides/Privacy'
 import CanCannot from './lessons/ai-intro/slides/CanCannot'
 import Block5Title from './lessons/ai-intro/slides/Block5Title'
-import DemoChatGPT from './lessons/ai-intro/slides/DemoChatGPT'
 import Case1 from './lessons/ai-intro/slides/Case1'
 import Case2 from './lessons/ai-intro/slides/Case2'
-import RussianModels from './lessons/ai-intro/slides/RussianModels'
 import KodikTool from './lessons/ai-intro/slides/KodikTool'
 import OneShotFewShot from './lessons/ai-intro/slides/OneShotFewShot'
 import PromptEngineering from './lessons/ai-intro/slides/PromptEngineering'
@@ -58,20 +58,20 @@ const slides = [
   LLMExplained,
   WhatIsPrompt,
   GoodPrompt,
+  Hallucinations,
+  ContextMemory,
+  RulesFiles,
   Block3Title,
   TextGeneration,
   Classification,
   Automation,
   HousingExamples,
   Block4Title,
-  Hallucinations,
   Privacy,
   CanCannot,
   Block5Title,
-  DemoChatGPT,
   Case1,
   Case2,
-  RussianModels,
   KodikTool,
   OneShotFewShot,
   PromptEngineering,

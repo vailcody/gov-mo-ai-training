@@ -1,0 +1,45 @@
+import type { SlideProps } from '../../../components/PresentationShell'
+
+export default function SlideRulesFiles({ slideIndex }: SlideProps) {
+  return (
+    <>
+      <span className="slide-number">{String(slideIndex + 1).padStart(2, '0')}</span>
+      <h2 className="reveal">Решение: рабочие файлы для каждого нового диалога</h2>
+
+      <div className="card-grid reveal">
+        <div className="card highlighted">
+          <h3>Файл с правилами</h3>
+          <ul>
+            <li>Какой должен быть тон ответа</li>
+            <li>Какая структура обязательна</li>
+            <li>Нужны ли ссылки на нормативные акты</li>
+            <li>Какие формулировки нельзя использовать</li>
+          </ul>
+        </div>
+
+        <div className="card">
+          <h3>Файл с примерами</h3>
+          <ul>
+            <li>Образцы хороших ответов на типовые обращения</li>
+            <li>Примеры удачного стиля и формата</li>
+            <li>Шаблоны, на которые модель может опираться</li>
+          </ul>
+        </div>
+
+        <div className="card">
+          <h3>Файл с нормативной базой</h3>
+          <ul>
+            <li>Выдержки из ЖК РФ</li>
+            <li>Постановления Правительства</li>
+            <li>Региональные НПА и локальные регламенты</li>
+          </ul>
+        </div>
+
+        <div className="card">
+          <h3>Ключевое правило</h3>
+          <p>Эти файлы нужно прикреплять в каждый новый диалог, иначе модель снова будет работать почти без нужного контекста.</p>
+        </div>
+      </div>
+    </>
+  )
+}
