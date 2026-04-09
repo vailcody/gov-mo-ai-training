@@ -18,6 +18,7 @@ import WhatIsPrompt from './lessons/ai-intro/slides/WhatIsPrompt'
 import GoodPrompt from './lessons/ai-intro/slides/GoodPrompt'
 import ContextMemory from './lessons/ai-intro/slides/ContextMemory'
 import RulesFiles from './lessons/ai-intro/slides/RulesFiles'
+import KodikComparison from './lessons/ai-intro/slides/KodikComparison'
 import Block3Title from './lessons/ai-intro/slides/Block3Title'
 import TextGeneration from './lessons/ai-intro/slides/TextGeneration'
 import Classification from './lessons/ai-intro/slides/Classification'
@@ -59,6 +60,7 @@ const slides = [
   Hallucinations,
   ContextMemory,
   RulesFiles,
+  KodikComparison,
   Block3Title,
   TextGeneration,
   Classification,

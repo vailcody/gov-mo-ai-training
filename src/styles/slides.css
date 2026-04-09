@@ -522,6 +522,56 @@ body::before {
 }
 
 /* ===========================================
+   COMPARISON TABLE
+   =========================================== */
+.compare-table {
+  margin-top: 1.25rem;
+  border: 2px solid var(--text-primary);
+  background: var(--bg-primary);
+}
+
+.compare-header,
+.compare-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1.5fr 1.4fr;
+}
+
+.compare-row {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.compare-row-accent {
+  background: rgba(37, 99, 235, 0.06);
+}
+
+.compare-cell {
+  padding: 1rem 1.1rem;
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  line-height: 1.55;
+  color: var(--text-secondary);
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.compare-cell:last-child {
+  border-right: none;
+}
+
+.compare-cell-head {
+  font-family: var(--font-display);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+}
+
+.compare-label {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+/* ===========================================
    PROMPT CONTENT
    =========================================== */
 .prompt-intro {
@@ -788,6 +838,20 @@ body::before {
   .steps,
   .prompt-principles {
     grid-template-columns: 1fr;
+  }
+
+  .compare-header,
+  .compare-row {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-cell {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .compare-cell:last-child {
+    border-bottom: none;
   }
 
   .geo-square, .geo-line, .geo-outline {
