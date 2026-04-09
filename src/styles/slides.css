@@ -667,13 +667,15 @@ body::before {
   align-items: center;
   justify-content: center;
   background: var(--bg-secondary);
+  max-height: 280px;
 }
 
 .why-now-visual img {
   width: 100%;
-  height: auto;
+  max-height: 280px;
   display: block;
   object-fit: cover;
+  object-position: center;
 }
 
 .why-now-text h3 {
