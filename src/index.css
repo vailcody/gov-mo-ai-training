@@ -103,6 +103,9 @@ p {
   color: var(--text-secondary);
   font-weight: 400;
   text-align: center;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .label {
