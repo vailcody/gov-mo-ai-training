@@ -615,6 +615,109 @@ body::before {
 }
 
 /* ===========================================
+   WHY NOW GRID (slide 05)
+   =========================================== */
+.why-now-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.why-now-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.why-now-visual {
+  border: 2px solid var(--text-primary);
+  overflow: hidden;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-secondary);
+}
+
+.why-now-visual img {
+  width: 100%;
+  display: block;
+}
+
+.why-now-text h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.why-now-text p {
+  font-size: clamp(0.9rem, 1.3vw, 1.05rem);
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Data growth chart */
+.data-chart {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.data-bar-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.data-label {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(0.7rem, 1vw, 0.85rem);
+  min-width: 36px;
+  text-align: right;
+  color: var(--text-secondary);
+}
+
+.data-bar {
+  height: 24px;
+  background: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 0.5rem;
+  transition: width 0.5s ease;
+}
+
+.data-bar span {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(0.6rem, 0.9vw, 0.75rem);
+  color: var(--bg-primary);
+  white-space: nowrap;
+}
+
+.data-bar.accent {
+  background: var(--accent);
+}
+
+.data-bar.accent span {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .why-now-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================================
    HISTORY LAYOUT (photo + timeline)
    =========================================== */
 .history-layout {

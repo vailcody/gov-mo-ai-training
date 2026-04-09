@@ -10,19 +10,50 @@ export default function Slide05WhyNow({}: SlideProps) {
         <p><strong>2022–2023 — переломный момент.</strong> За два года ИИ стал массовым продуктом, доступным каждому.</p>
       </div>
 
-      <div className="steps">
-        <div className="step">
-          <div className="step-number">01</div>
-          <div>
-            <div className="step-text">Интернет</div>
-            <div className="step-desc">Интернет накопил достаточно текста, чтобы модели могли учиться на миллиардах примеров</div>
+      <div className="why-now-grid reveal">
+        <div className="why-now-card">
+          <div className="why-now-visual">
+            {/* Internet data growth chart */}
+            <div className="data-chart">
+              <div className="data-bar-row">
+                <span className="data-label">2010</span>
+                <div className="data-bar" style={{ width: '8%' }}><span>2 ЗБ</span></div>
+              </div>
+              <div className="data-bar-row">
+                <span className="data-label">2015</span>
+                <div className="data-bar" style={{ width: '18%' }}><span>15 ЗБ</span></div>
+              </div>
+              <div className="data-bar-row">
+                <span className="data-label">2018</span>
+                <div className="data-bar" style={{ width: '33%' }}><span>33 ЗБ</span></div>
+              </div>
+              <div className="data-bar-row">
+                <span className="data-label">2020</span>
+                <div className="data-bar" style={{ width: '49%' }}><span>64 ЗБ</span></div>
+              </div>
+              <div className="data-bar-row">
+                <span className="data-label">2023</span>
+                <div className="data-bar" style={{ width: '75%' }}><span>120 ЗБ</span></div>
+              </div>
+              <div className="data-bar-row">
+                <span className="data-label">2025</span>
+                <div className="data-bar accent" style={{ width: '100%' }}><span>181 ЗБ</span></div>
+              </div>
+            </div>
+          </div>
+          <div className="why-now-text">
+            <h3>Интернет</h3>
+            <p>Интернет накопил достаточно текста, чтобы модели могли учиться на миллиардах примеров</p>
           </div>
         </div>
-        <div className="step">
-          <div className="step-number">02</div>
-          <div>
-            <div className="step-text">Вычислительные ресурсы</div>
-            <div className="step-desc">Графические процессоры (GPU) стали достаточно мощными для обучения больших моделей</div>
+
+        <div className="why-now-card">
+          <div className="why-now-visual">
+            <img src="/nvidia-hgx.jpg" alt="NVIDIA HGX — 8 GPU для обучения ИИ" />
+          </div>
+          <div className="why-now-text">
+            <h3>Вычислительные ресурсы</h3>
+            <p>Графические процессоры (GPU) стали достаточно мощными для обучения больших моделей</p>
           </div>
         </div>
       </div>
