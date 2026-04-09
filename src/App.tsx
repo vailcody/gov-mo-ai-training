@@ -13,7 +13,6 @@ import ExponentialGrowth from './lessons/ai-intro/slides/ExponentialGrowth'
 import ComputeCost from './lessons/ai-intro/slides/ComputeCost'
 import AutonomyLevels from './lessons/ai-intro/slides/AutonomyLevels'
 import Block2Title from './lessons/ai-intro/slides/Block2Title'
-import NeuralNetwork from './lessons/ai-intro/slides/NeuralNetwork'
 import LLMExplained from './lessons/ai-intro/slides/LLMExplained'
 import WhatIsPrompt from './lessons/ai-intro/slides/WhatIsPrompt'
 import GoodPrompt from './lessons/ai-intro/slides/GoodPrompt'
@@ -54,7 +53,6 @@ const slides = [
   ComputeCost,
   AutonomyLevels,
   Block2Title,
-  NeuralNetwork,
   LLMExplained,
   WhatIsPrompt,
   GoodPrompt,
