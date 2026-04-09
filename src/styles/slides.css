@@ -142,6 +142,9 @@ body::before {
   letter-spacing: 0;
   text-transform: none;
   margin-top: 0.5rem;
+  text-align: left;
+  align-self: flex-start;
+  padding-left: var(--slide-padding);
 }
 
 .meta {
