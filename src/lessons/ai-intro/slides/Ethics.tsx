@@ -23,15 +23,7 @@ export default function SlideEthics({ slideIndex }: SlideProps) {
           </ul>
         </div>
 
-        <div className="card highlighted">
-          <h3>Справедливость</h3>
-          <ul>
-            <li>ИИ не должен дискриминировать</li>
-            <li>Одинаковое отношение к одинаковым случаям</li>
-          </ul>
-        </div>
-
-        <div className="card">
+<div className="card">
           <h3>Человеческий контроль</h3>
           <ul>
             <li>ИИ — инструмент, не руководитель</li>

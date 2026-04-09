@@ -14,6 +14,8 @@ import AutonomyLevels from './lessons/ai-intro/slides/AutonomyLevels'
 import Block2Title from './lessons/ai-intro/slides/Block2Title'
 import NeuralNetwork from './lessons/ai-intro/slides/NeuralNetwork'
 import LLMExplained from './lessons/ai-intro/slides/LLMExplained'
+import WhatIsPrompt from './lessons/ai-intro/slides/WhatIsPrompt'
+import GoodPrompt from './lessons/ai-intro/slides/GoodPrompt'
 import Block3Title from './lessons/ai-intro/slides/Block3Title'
 import TextGeneration from './lessons/ai-intro/slides/TextGeneration'
 import Classification from './lessons/ai-intro/slides/Classification'
@@ -23,7 +25,6 @@ import Block4Title from './lessons/ai-intro/slides/Block4Title'
 import Hallucinations from './lessons/ai-intro/slides/Hallucinations'
 import Privacy from './lessons/ai-intro/slides/Privacy'
 import CanCannot from './lessons/ai-intro/slides/CanCannot'
-import BiasFairness from './lessons/ai-intro/slides/BiasFairness'
 import Block5Title from './lessons/ai-intro/slides/Block5Title'
 import DemoChatGPT from './lessons/ai-intro/slides/DemoChatGPT'
 import Case1 from './lessons/ai-intro/slides/Case1'
@@ -51,6 +52,8 @@ const slides = [
   Block2Title,
   NeuralNetwork,
   LLMExplained,
+  WhatIsPrompt,
+  GoodPrompt,
   Block3Title,
   TextGeneration,
   Classification,
@@ -60,7 +63,6 @@ const slides = [
   Hallucinations,
   Privacy,
   CanCannot,
-  BiasFairness,
   Block5Title,
   DemoChatGPT,
   Case1,

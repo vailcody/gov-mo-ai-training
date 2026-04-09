@@ -7,7 +7,7 @@ export default function SlideClassification({ slideIndex }: SlideProps) {
       <h2 className="reveal">Классификация обращений</h2>
 
       <div className="highlight-box reveal">
-        <p><strong>Задача:</strong> автоматически определить категорию входящего обращения гражданина и направить в нужный отдел.</p>
+        <p><strong>Задача:</strong> помочь сотруднику быстро определить категорию обращения и направить в нужный отдел.</p>
       </div>
 
       <div className="card-grid">
@@ -24,10 +24,10 @@ export default function SlideClassification({ slideIndex }: SlideProps) {
         <div className="card highlighted">
           <h3>С ИИ</h3>
           <ul>
-            <li>Модель анализирует текст за секунды</li>
-            <li>Определяет категорию и срочность</li>
-            <li>Маршрутизирует автоматически</li>
-            <li>Среднее время: 2–3 секунды</li>
+            <li>ИИ-копилот анализирует обращение</li>
+            <li>Предлагает категорию и срочность</li>
+            <li>Сотрудник подтверждает и направляет</li>
+            <li>Среднее время: до 1 минуты</li>
           </ul>
         </div>
       </div>
