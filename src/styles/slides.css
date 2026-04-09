@@ -633,7 +633,6 @@ body::before {
 .why-now-visual {
   border: 2px solid var(--text-primary);
   overflow: hidden;
-  min-height: 180px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -642,7 +641,9 @@ body::before {
 
 .why-now-visual img {
   width: 100%;
+  height: auto;
   display: block;
+  object-fit: cover;
 }
 
 .why-now-text h3 {
