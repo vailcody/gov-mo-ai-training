@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide11UnderTheHood({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">11</span>
+      <span className="slide-number">12</span>
       <h2 className="reveal">Что «под капотом» у ChatGPT</h2>
 
       <div className="steps">

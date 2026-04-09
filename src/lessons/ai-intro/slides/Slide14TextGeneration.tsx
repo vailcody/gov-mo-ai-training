@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide13TextGeneration({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">13</span>
+      <span className="slide-number">14</span>
       <h2 className="reveal">Генерация и анализ текста</h2>
 
       <div className="card-row">

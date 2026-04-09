@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide10LLMExplained({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">10</span>
+      <span className="slide-number">11</span>
       <h2 className="reveal">Что такое LLM</h2>
 
       <div className="highlight-box reveal">

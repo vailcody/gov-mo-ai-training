@@ -615,6 +615,36 @@ body::before {
 }
 
 /* ===========================================
+   EXPONENTIAL GROWTH (slide 06)
+   =========================================== */
+.exponential-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.exponential-chart img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 2px solid var(--text-primary);
+}
+
+.explanation-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+@media (max-width: 768px) {
+  .exponential-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===========================================
    WHY NOW GRID (slide 05)
    =========================================== */
 .why-now-grid {

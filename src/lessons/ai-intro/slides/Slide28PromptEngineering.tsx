@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide27PromptEngineering({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">27</span>
+      <span className="slide-number">28</span>
       <h2 className="reveal">Как правильно писать запросы</h2>
 
       <div className="steps">

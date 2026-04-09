@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide09NeuralNetwork({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">09</span>
+      <span className="slide-number">10</span>
       <h2 className="reveal">Нейросеть — как мозг?</h2>
 
       <div className="highlight-box reveal">

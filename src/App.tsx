@@ -8,36 +8,37 @@ import Slide02Plan from './lessons/ai-intro/slides/Slide02Plan'
 import Slide03WhatIsAI from './lessons/ai-intro/slides/Slide03WhatIsAI'
 import Slide04History from './lessons/ai-intro/slides/Slide04History'
 import Slide05WhyNow from './lessons/ai-intro/slides/Slide05WhyNow'
-import Slide06TypesAI from './lessons/ai-intro/slides/Slide06TypesAI'
-import Slide07Block2Title from './lessons/ai-intro/slides/Slide07Block2Title'
-import Slide08MLExplained from './lessons/ai-intro/slides/Slide08MLExplained'
-import Slide09NeuralNetwork from './lessons/ai-intro/slides/Slide09NeuralNetwork'
-import Slide10LLMExplained from './lessons/ai-intro/slides/Slide10LLMExplained'
-import Slide11UnderTheHood from './lessons/ai-intro/slides/Slide11UnderTheHood'
-import Slide12Block3Title from './lessons/ai-intro/slides/Slide12Block3Title'
-import Slide13TextGeneration from './lessons/ai-intro/slides/Slide13TextGeneration'
-import Slide14Classification from './lessons/ai-intro/slides/Slide14Classification'
-import Slide15Automation from './lessons/ai-intro/slides/Slide15Automation'
-import Slide16HousingExamples from './lessons/ai-intro/slides/Slide16HousingExamples'
-import Slide17Block4Title from './lessons/ai-intro/slides/Slide17Block4Title'
-import Slide18Hallucinations from './lessons/ai-intro/slides/Slide18Hallucinations'
-import Slide19Privacy from './lessons/ai-intro/slides/Slide19Privacy'
-import Slide20CanCannot from './lessons/ai-intro/slides/Slide20CanCannot'
-import Slide21BiasFairness from './lessons/ai-intro/slides/Slide21BiasFairness'
-import Slide22Block5Title from './lessons/ai-intro/slides/Slide22Block5Title'
-import Slide23DemoChatGPT from './lessons/ai-intro/slides/Slide23DemoChatGPT'
-import Slide24Case1 from './lessons/ai-intro/slides/Slide24Case1'
-import Slide25Case2 from './lessons/ai-intro/slides/Slide25Case2'
-import Slide26RussianModels from './lessons/ai-intro/slides/Slide26RussianModels'
-import Slide27PromptEngineering from './lessons/ai-intro/slides/Slide27PromptEngineering'
-import Slide28PracticalTips from './lessons/ai-intro/slides/Slide28PracticalTips'
-import Slide29Checklist from './lessons/ai-intro/slides/Slide29Checklist'
-import Slide30Regulation from './lessons/ai-intro/slides/Slide30Regulation'
-import Slide31Ethics from './lessons/ai-intro/slides/Slide31Ethics'
-import Slide32Implementation from './lessons/ai-intro/slides/Slide32Implementation'
-import Slide33KeyTakeaways from './lessons/ai-intro/slides/Slide33KeyTakeaways'
-import Slide34QandA from './lessons/ai-intro/slides/Slide34QandA'
-import Slide35Closing from './lessons/ai-intro/slides/Slide35Closing'
+import Slide06ExponentialGrowth from './lessons/ai-intro/slides/Slide06ExponentialGrowth'
+import Slide07TypesAI from './lessons/ai-intro/slides/Slide07TypesAI'
+import Slide08Block2Title from './lessons/ai-intro/slides/Slide08Block2Title'
+import Slide09MLExplained from './lessons/ai-intro/slides/Slide09MLExplained'
+import Slide10NeuralNetwork from './lessons/ai-intro/slides/Slide10NeuralNetwork'
+import Slide11LLMExplained from './lessons/ai-intro/slides/Slide11LLMExplained'
+import Slide12UnderTheHood from './lessons/ai-intro/slides/Slide12UnderTheHood'
+import Slide13Block3Title from './lessons/ai-intro/slides/Slide13Block3Title'
+import Slide14TextGeneration from './lessons/ai-intro/slides/Slide14TextGeneration'
+import Slide15Classification from './lessons/ai-intro/slides/Slide15Classification'
+import Slide16Automation from './lessons/ai-intro/slides/Slide16Automation'
+import Slide17HousingExamples from './lessons/ai-intro/slides/Slide17HousingExamples'
+import Slide18Block4Title from './lessons/ai-intro/slides/Slide18Block4Title'
+import Slide19Hallucinations from './lessons/ai-intro/slides/Slide19Hallucinations'
+import Slide20Privacy from './lessons/ai-intro/slides/Slide20Privacy'
+import Slide21CanCannot from './lessons/ai-intro/slides/Slide21CanCannot'
+import Slide22BiasFairness from './lessons/ai-intro/slides/Slide22BiasFairness'
+import Slide23Block5Title from './lessons/ai-intro/slides/Slide23Block5Title'
+import Slide24DemoChatGPT from './lessons/ai-intro/slides/Slide24DemoChatGPT'
+import Slide25Case1 from './lessons/ai-intro/slides/Slide25Case1'
+import Slide26Case2 from './lessons/ai-intro/slides/Slide26Case2'
+import Slide27RussianModels from './lessons/ai-intro/slides/Slide27RussianModels'
+import Slide28PromptEngineering from './lessons/ai-intro/slides/Slide28PromptEngineering'
+import Slide29PracticalTips from './lessons/ai-intro/slides/Slide29PracticalTips'
+import Slide30Checklist from './lessons/ai-intro/slides/Slide30Checklist'
+import Slide31Regulation from './lessons/ai-intro/slides/Slide31Regulation'
+import Slide32Ethics from './lessons/ai-intro/slides/Slide32Ethics'
+import Slide33Implementation from './lessons/ai-intro/slides/Slide33Implementation'
+import Slide34KeyTakeaways from './lessons/ai-intro/slides/Slide34KeyTakeaways'
+import Slide35QandA from './lessons/ai-intro/slides/Slide35QandA'
+import Slide36Closing from './lessons/ai-intro/slides/Slide36Closing'
 
 const slides = [
   Slide01Title,
@@ -45,36 +46,37 @@ const slides = [
   Slide03WhatIsAI,
   Slide04History,
   Slide05WhyNow,
-  Slide06TypesAI,
-  Slide07Block2Title,
-  Slide08MLExplained,
-  Slide09NeuralNetwork,
-  Slide10LLMExplained,
-  Slide11UnderTheHood,
-  Slide12Block3Title,
-  Slide13TextGeneration,
-  Slide14Classification,
-  Slide15Automation,
-  Slide16HousingExamples,
-  Slide17Block4Title,
-  Slide18Hallucinations,
-  Slide19Privacy,
-  Slide20CanCannot,
-  Slide21BiasFairness,
-  Slide22Block5Title,
-  Slide23DemoChatGPT,
-  Slide24Case1,
-  Slide25Case2,
-  Slide26RussianModels,
-  Slide27PromptEngineering,
-  Slide28PracticalTips,
-  Slide29Checklist,
-  Slide30Regulation,
-  Slide31Ethics,
-  Slide32Implementation,
-  Slide33KeyTakeaways,
-  Slide34QandA,
-  Slide35Closing,
+  Slide06ExponentialGrowth,
+  Slide07TypesAI,
+  Slide08Block2Title,
+  Slide09MLExplained,
+  Slide10NeuralNetwork,
+  Slide11LLMExplained,
+  Slide12UnderTheHood,
+  Slide13Block3Title,
+  Slide14TextGeneration,
+  Slide15Classification,
+  Slide16Automation,
+  Slide17HousingExamples,
+  Slide18Block4Title,
+  Slide19Hallucinations,
+  Slide20Privacy,
+  Slide21CanCannot,
+  Slide22BiasFairness,
+  Slide23Block5Title,
+  Slide24DemoChatGPT,
+  Slide25Case1,
+  Slide26Case2,
+  Slide27RussianModels,
+  Slide28PromptEngineering,
+  Slide29PracticalTips,
+  Slide30Checklist,
+  Slide31Regulation,
+  Slide32Ethics,
+  Slide33Implementation,
+  Slide34KeyTakeaways,
+  Slide35QandA,
+  Slide36Closing,
 ]
 
 function App() {

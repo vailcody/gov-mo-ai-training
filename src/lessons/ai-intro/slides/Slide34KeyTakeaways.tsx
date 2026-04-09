@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide33KeyTakeaways({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">33</span>
+      <span className="slide-number">34</span>
       <h2 className="reveal">Главные выводы</h2>
 
       <div className="steps">

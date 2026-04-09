@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide32Implementation({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">32</span>
+      <span className="slide-number">33</span>
       <h2 className="reveal">Как внедрить ИИ в работу</h2>
 
       <div className="steps">

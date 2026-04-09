@@ -3,7 +3,7 @@ import type { SlideProps } from '../../../components/PresentationShell'
 export default function Slide06TypesAI({}: SlideProps) {
   return (
     <>
-      <span className="slide-number">06</span>
+      <span className="slide-number">07</span>
       <h2 className="reveal">Два типа ИИ</h2>
 
       <div className="card-grid">
