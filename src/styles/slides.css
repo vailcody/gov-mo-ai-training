@@ -580,6 +580,15 @@ body::before {
     display: none;
   }
 
+  .history-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .history-photo img {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
   .step {
     gap: 1rem;
   }
@@ -603,6 +612,36 @@ body::before {
   html {
     scroll-behavior: auto;
   }
+}
+
+/* ===========================================
+   HISTORY LAYOUT (photo + timeline)
+   =========================================== */
+.history-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.history-photo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.history-photo img {
+  width: 100%;
+  border: 2px solid var(--text-primary);
+}
+
+.history-caption {
+  font-family: var(--font-body);
+  font-size: clamp(0.75rem, 1.1vw, 0.9rem);
+  color: var(--text-secondary);
+  margin: 0;
+  text-align: center;
 }
 
 /* ===========================================
