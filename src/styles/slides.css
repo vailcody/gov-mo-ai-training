@@ -669,6 +669,50 @@ body::before {
 }
 
 /* ===========================================
+   POSTER SLIDE
+   =========================================== */
+.poster-slide {
+  min-height: 72vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: min(1100px, 100%);
+}
+
+.poster-kicker {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.poster-title {
+  font-family: var(--font-display);
+  font-size: clamp(3.4rem, 9vw, 7rem);
+  font-weight: 900;
+  line-height: 0.92;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--text-primary);
+}
+
+.poster-title-accent {
+  color: var(--accent);
+}
+
+.poster-body {
+  max-width: 760px;
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+  line-height: 1.55;
+  color: var(--text-secondary);
+  margin-top: 0.5rem;
+}
+
+/* ===========================================
    NEXT TOKEN EXAMPLE
    =========================================== */
 .next-token-stage {
