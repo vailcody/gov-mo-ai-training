@@ -52,6 +52,7 @@ export default function SlideKodikComparison({ slideIndex }: SlideProps) {
             <li>Доступен без VPN</li>
             <li>Можно оплачивать российской картой</li>
             <li>Есть доступ не только к российским, но и к зарубежным моделям</li>
+            <li><a href="https://vibekodik.ru/gov-mo" target="_blank" rel="noopener noreferrer">Скачать Kodik: vibekodik.ru/gov-mo</a></li>
           </ul>
         </div>
 

@@ -33,7 +33,6 @@ import CanCannot from './lessons/ai-intro/slides/CanCannot'
 import Block5Title from './lessons/ai-intro/slides/Block5Title'
 import Case1 from './lessons/ai-intro/slides/Case1'
 import Case2 from './lessons/ai-intro/slides/Case2'
-import KodikTool from './lessons/ai-intro/slides/KodikTool'
 import Implementation from './lessons/ai-intro/slides/Implementation'
 import QandA from './lessons/ai-intro/slides/QandA'
 
@@ -68,7 +67,6 @@ const slides = [
   Block5Title,
   Case1,
   Case2,
-  KodikTool,
   Implementation,
   QandA,
 ]
