@@ -23,6 +23,7 @@ import RulesFileSlide from './lessons/ai-intro/slides/RulesFileSlide'
 import ExamplesFileSlide from './lessons/ai-intro/slides/ExamplesFileSlide'
 import LawsFileSlide from './lessons/ai-intro/slides/LawsFileSlide'
 import AttachEveryChatSlide from './lessons/ai-intro/slides/AttachEveryChatSlide'
+import DoItYourselfQuestion from './lessons/ai-intro/slides/DoItYourselfQuestion'
 import AssistantVsAgent from './lessons/ai-intro/slides/AssistantVsAgent'
 import KodikWhat from './lessons/ai-intro/slides/KodikWhat'
 import KodikWhyRussia from './lessons/ai-intro/slides/KodikWhyRussia'
@@ -63,6 +64,7 @@ const slides = [
   ExamplesFileSlide,
   LawsFileSlide,
   AttachEveryChatSlide,
+  DoItYourselfQuestion,
   AssistantVsAgent,
   KodikWhat,
   KodikWhyRussia,
