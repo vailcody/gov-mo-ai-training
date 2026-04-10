@@ -19,7 +19,10 @@ import WhatIsPrompt from './lessons/ai-intro/slides/WhatIsPrompt'
 import GoodPrompt from './lessons/ai-intro/slides/GoodPrompt'
 import OneShotFewShot from './lessons/ai-intro/slides/OneShotFewShot'
 import ContextMemory from './lessons/ai-intro/slides/ContextMemory'
-import RulesFiles from './lessons/ai-intro/slides/RulesFiles'
+import RulesFileSlide from './lessons/ai-intro/slides/RulesFileSlide'
+import ExamplesFileSlide from './lessons/ai-intro/slides/ExamplesFileSlide'
+import LawsFileSlide from './lessons/ai-intro/slides/LawsFileSlide'
+import AttachEveryChatSlide from './lessons/ai-intro/slides/AttachEveryChatSlide'
 import KodikComparison from './lessons/ai-intro/slides/KodikComparison'
 import Block3Title from './lessons/ai-intro/slides/Block3Title'
 import TextGeneration from './lessons/ai-intro/slides/TextGeneration'
@@ -33,7 +36,6 @@ import CanCannot from './lessons/ai-intro/slides/CanCannot'
 import Block5Title from './lessons/ai-intro/slides/Block5Title'
 import Case1 from './lessons/ai-intro/slides/Case1'
 import Case2 from './lessons/ai-intro/slides/Case2'
-import Implementation from './lessons/ai-intro/slides/Implementation'
 import QandA from './lessons/ai-intro/slides/QandA'
 
 const slides = [
@@ -54,7 +56,10 @@ const slides = [
   OneShotFewShot,
   Hallucinations,
   ContextMemory,
-  RulesFiles,
+  RulesFileSlide,
+  ExamplesFileSlide,
+  LawsFileSlide,
+  AttachEveryChatSlide,
   KodikComparison,
   Block3Title,
   TextGeneration,
@@ -67,7 +72,6 @@ const slides = [
   Block5Title,
   Case1,
   Case2,
-  Implementation,
   QandA,
 ]
 
