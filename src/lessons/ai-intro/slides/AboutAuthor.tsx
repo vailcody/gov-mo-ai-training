@@ -16,13 +16,13 @@ export default function SlideAboutAuthor({ slideIndex }: SlideProps) {
         <div className="author-info">
           <h2 style={{ marginBottom: '0.6rem' }}>Константин Чуйков</h2>
           <p className="author-bio">
-            Автор канала <a href="https://t.me/vibe_coding" target="_blank" rel="noreferrer">«Вайб-кодинг по Чуйкову»</a> и лидер сообщества <a href="https://t.me/vibe_coding_community" target="_blank" rel="noreferrer">Vibe Coding Community</a>.
+            Больше 15 лет в IT. Прошел путь от основателя веб-студии до технического директора в стартапе и руководителя направления ИИ в корпорации (ex-Сбер, ex-СберУниверситет).
           </p>
           <p className="author-bio">
-            15 лет в IT. Прошел путь от фрилансера и фаундера веб-студии до CTO в стартапе и руководителя разработки в бигтехе.
+            Эксперт и консультант по практическому применению искусственного интеллекта в бизнес-процессах. Проводил обучение по ИИ и вайб-кодингу в Яндексе, СберУниверситете, Синергии и Правительстве МО.
           </p>
           <p className="author-bio">
-            Проводил обучение по ИИ и вайб-кодингу в Яндексе, СберУниверситете, Синергии и Правительстве Московской области.
+            Автор канала <a href="https://t.me/vibe_coding" target="_blank" rel="noreferrer">«Вайб-кодинг по Чуйкову»</a> и лидер сообщества вайб-кодеров.
           </p>
         </div>
       </div>
