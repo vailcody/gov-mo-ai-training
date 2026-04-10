@@ -24,7 +24,9 @@ import ExamplesFileSlide from './lessons/ai-intro/slides/ExamplesFileSlide'
 import LawsFileSlide from './lessons/ai-intro/slides/LawsFileSlide'
 import AttachEveryChatSlide from './lessons/ai-intro/slides/AttachEveryChatSlide'
 import AssistantVsAgent from './lessons/ai-intro/slides/AssistantVsAgent'
-import KodikUseCase from './lessons/ai-intro/slides/KodikUseCase'
+import KodikWhat from './lessons/ai-intro/slides/KodikWhat'
+import KodikWhyRussia from './lessons/ai-intro/slides/KodikWhyRussia'
+import KodikCTA from './lessons/ai-intro/slides/KodikCTA'
 import Block3Title from './lessons/ai-intro/slides/Block3Title'
 import TextGeneration from './lessons/ai-intro/slides/TextGeneration'
 import Classification from './lessons/ai-intro/slides/Classification'
@@ -62,7 +64,9 @@ const slides = [
   LawsFileSlide,
   AttachEveryChatSlide,
   AssistantVsAgent,
-  KodikUseCase,
+  KodikWhat,
+  KodikWhyRussia,
+  KodikCTA,
   Block3Title,
   TextGeneration,
   Classification,
