@@ -14,7 +14,7 @@ export default function SlideHallucinations({ slideIndex }: SlideProps) {
 
       <div className="hallucination-layout reveal">
         <div className="hallucination-photo">
-          <img src={`${BASE}ai-intro/hallucinations.jpg`} alt="Иллюстрация галлюцинаций ИИ" />
+          <img src={`${BASE}hallucinations.jpg`} alt="Иллюстрация галлюцинаций ИИ" />
         </div>
 
         <div className="hallucination-content">
