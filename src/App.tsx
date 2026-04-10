@@ -23,7 +23,8 @@ import RulesFileSlide from './lessons/ai-intro/slides/RulesFileSlide'
 import ExamplesFileSlide from './lessons/ai-intro/slides/ExamplesFileSlide'
 import LawsFileSlide from './lessons/ai-intro/slides/LawsFileSlide'
 import AttachEveryChatSlide from './lessons/ai-intro/slides/AttachEveryChatSlide'
-import KodikComparison from './lessons/ai-intro/slides/KodikComparison'
+import AssistantVsAgent from './lessons/ai-intro/slides/AssistantVsAgent'
+import KodikUseCase from './lessons/ai-intro/slides/KodikUseCase'
 import Block3Title from './lessons/ai-intro/slides/Block3Title'
 import TextGeneration from './lessons/ai-intro/slides/TextGeneration'
 import Classification from './lessons/ai-intro/slides/Classification'
@@ -60,7 +61,8 @@ const slides = [
   ExamplesFileSlide,
   LawsFileSlide,
   AttachEveryChatSlide,
-  KodikComparison,
+  AssistantVsAgent,
+  KodikUseCase,
   Block3Title,
   TextGeneration,
   Classification,
