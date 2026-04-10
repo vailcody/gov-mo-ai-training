@@ -17,6 +17,7 @@ import LLMExplained from './lessons/ai-intro/slides/LLMExplained'
 import NextTokenExample from './lessons/ai-intro/slides/NextTokenExample'
 import WhatIsPrompt from './lessons/ai-intro/slides/WhatIsPrompt'
 import GoodPrompt from './lessons/ai-intro/slides/GoodPrompt'
+import OneShotFewShot from './lessons/ai-intro/slides/OneShotFewShot'
 import ContextMemory from './lessons/ai-intro/slides/ContextMemory'
 import RulesFiles from './lessons/ai-intro/slides/RulesFiles'
 import KodikComparison from './lessons/ai-intro/slides/KodikComparison'
@@ -33,16 +34,8 @@ import Block5Title from './lessons/ai-intro/slides/Block5Title'
 import Case1 from './lessons/ai-intro/slides/Case1'
 import Case2 from './lessons/ai-intro/slides/Case2'
 import KodikTool from './lessons/ai-intro/slides/KodikTool'
-import OneShotFewShot from './lessons/ai-intro/slides/OneShotFewShot'
-import PromptEngineering from './lessons/ai-intro/slides/PromptEngineering'
-import PracticalTips from './lessons/ai-intro/slides/PracticalTips'
-import Checklist from './lessons/ai-intro/slides/Checklist'
-import Regulation from './lessons/ai-intro/slides/Regulation'
-import Ethics from './lessons/ai-intro/slides/Ethics'
 import Implementation from './lessons/ai-intro/slides/Implementation'
-import KeyTakeaways from './lessons/ai-intro/slides/KeyTakeaways'
 import QandA from './lessons/ai-intro/slides/QandA'
-import Closing from './lessons/ai-intro/slides/Closing'
 
 const slides = [
   Title,
@@ -59,6 +52,7 @@ const slides = [
   NextTokenExample,
   WhatIsPrompt,
   GoodPrompt,
+  OneShotFewShot,
   Hallucinations,
   ContextMemory,
   RulesFiles,
@@ -75,16 +69,8 @@ const slides = [
   Case1,
   Case2,
   KodikTool,
-  OneShotFewShot,
-  PromptEngineering,
-  PracticalTips,
-  Checklist,
-  Regulation,
-  Ethics,
   Implementation,
-  KeyTakeaways,
   QandA,
-  Closing,
 ]
 
 function App() {
