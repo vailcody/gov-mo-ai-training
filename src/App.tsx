@@ -14,8 +14,8 @@ import ComputeCost from './lessons/ai-intro/slides/ComputeCost'
 import AutonomyLevels from './lessons/ai-intro/slides/AutonomyLevels'
 import Block2Title from './lessons/ai-intro/slides/Block2Title'
 import LLMExplained from './lessons/ai-intro/slides/LLMExplained'
-import WhatIsContext from './lessons/ai-intro/slides/WhatIsContext'
 import WhatIsMarkdown from './lessons/ai-intro/slides/WhatIsMarkdown'
+import WhatIsContext from './lessons/ai-intro/slides/WhatIsContext'
 import NextTokenExample from './lessons/ai-intro/slides/NextTokenExample'
 import WhatIsPrompt from './lessons/ai-intro/slides/WhatIsPrompt'
 import GoodPrompt from './lessons/ai-intro/slides/GoodPrompt'
@@ -53,13 +53,13 @@ const slides = [
   AutonomyLevels,
   Block2Title,
   LLMExplained,
-  WhatIsContext,
   WhatIsMarkdown,
   NextTokenExample,
   WhatIsPrompt,
   GoodPrompt,
   OneShotFewShot,
   Hallucinations,
+  WhatIsContext,
   ContextMemory,
   RulesFileSlide,
   ExamplesFileSlide,
