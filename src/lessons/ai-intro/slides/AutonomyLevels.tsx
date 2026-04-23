@@ -1,5 +1,7 @@
 import type { SlideProps } from '../../../components/PresentationShell'
 
+const BASE = import.meta.env.BASE_URL
+
 const LEVELS = [
   {
     num: 'L1',
@@ -42,7 +44,7 @@ export default function SlideAutonomyLevels({ slideIndex }: SlideProps) {
 
       <div className="sa-image-wrap reveal">
         <img
-          src="/ai-intro/autonomy-levels.jpg"
+          src={`${BASE}ai-intro/autonomy-levels.jpg`}
           alt="5 уровней автономии — от ручного управления до полной автоматизации"
           loading="lazy"
         />
