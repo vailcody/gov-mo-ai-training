@@ -14,7 +14,6 @@ import ComputeCost from './lessons/ai-intro/slides/ComputeCost'
 import AutonomyLevels from './lessons/ai-intro/slides/AutonomyLevels'
 import Block2Title from './lessons/ai-intro/slides/Block2Title'
 import LLMExplained from './lessons/ai-intro/slides/LLMExplained'
-import WhatIsLLMSimple from './lessons/ai-intro/slides/WhatIsLLMSimple'
 import WhatIsContext from './lessons/ai-intro/slides/WhatIsContext'
 import WhatIsMarkdown from './lessons/ai-intro/slides/WhatIsMarkdown'
 import NextTokenExample from './lessons/ai-intro/slides/NextTokenExample'
@@ -27,9 +26,6 @@ import ExamplesFileSlide from './lessons/ai-intro/slides/ExamplesFileSlide'
 import LawsFileSlide from './lessons/ai-intro/slides/LawsFileSlide'
 import AttachEveryChatSlide from './lessons/ai-intro/slides/AttachEveryChatSlide'
 import AssistantVsAgent from './lessons/ai-intro/slides/AssistantVsAgent'
-import KodikWhat from './lessons/ai-intro/slides/KodikWhat'
-import KodikWhyRussia from './lessons/ai-intro/slides/KodikWhyRussia'
-import KodikCTA from './lessons/ai-intro/slides/KodikCTA'
 import Block3Title from './lessons/ai-intro/slides/Block3Title'
 import TextGeneration from './lessons/ai-intro/slides/TextGeneration'
 import Classification from './lessons/ai-intro/slides/Classification'
@@ -38,7 +34,6 @@ import HousingExamples from './lessons/ai-intro/slides/HousingExamples'
 import Block4Title from './lessons/ai-intro/slides/Block4Title'
 import Hallucinations from './lessons/ai-intro/slides/Hallucinations'
 import Privacy from './lessons/ai-intro/slides/Privacy'
-import CanCannot from './lessons/ai-intro/slides/CanCannot'
 import Block5Title from './lessons/ai-intro/slides/Block5Title'
 import Case1 from './lessons/ai-intro/slides/Case1'
 import Case2 from './lessons/ai-intro/slides/Case2'
@@ -56,7 +51,6 @@ const slides = [
   AutonomyLevels,
   Block2Title,
   LLMExplained,
-  WhatIsLLMSimple,
   WhatIsContext,
   WhatIsMarkdown,
   NextTokenExample,
@@ -70,9 +64,6 @@ const slides = [
   LawsFileSlide,
   AttachEveryChatSlide,
   AssistantVsAgent,
-  KodikWhat,
-  KodikWhyRussia,
-  KodikCTA,
   Block3Title,
   TextGeneration,
   Classification,
@@ -80,7 +71,6 @@ const slides = [
   HousingExamples,
   Block4Title,
   Privacy,
-  CanCannot,
   Block5Title,
   Case1,
   Case2,
