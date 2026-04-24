@@ -14,12 +14,12 @@ import ComputeCost from './lessons/ai-intro/slides/ComputeCost'
 import AutonomyLevels from './lessons/ai-intro/slides/AutonomyLevels'
 import Block2Title from './lessons/ai-intro/slides/Block2Title'
 import LLMExplained from './lessons/ai-intro/slides/LLMExplained'
-import WhatIsMarkdown from './lessons/ai-intro/slides/WhatIsMarkdown'
 import WhatIsContext from './lessons/ai-intro/slides/WhatIsContext'
 import NextTokenExample from './lessons/ai-intro/slides/NextTokenExample'
 import WhatIsPrompt from './lessons/ai-intro/slides/WhatIsPrompt'
 import GoodPrompt from './lessons/ai-intro/slides/GoodPrompt'
 import OneShotFewShot from './lessons/ai-intro/slides/OneShotFewShot'
+import Hallucinations from './lessons/ai-intro/slides/Hallucinations'
 import ContextMemory from './lessons/ai-intro/slides/ContextMemory'
 import RulesFileSlide from './lessons/ai-intro/slides/RulesFileSlide'
 import ExamplesFileSlide from './lessons/ai-intro/slides/ExamplesFileSlide'
@@ -28,13 +28,14 @@ import AttachEveryChatSlide from './lessons/ai-intro/slides/AttachEveryChatSlide
 import AssistantVsAgent from './lessons/ai-intro/slides/AssistantVsAgent'
 import KodikWhat from './lessons/ai-intro/slides/KodikWhat'
 import KodikWhyRussia from './lessons/ai-intro/slides/KodikWhyRussia'
+import PersonalOS from './lessons/ai-intro/slides/PersonalOS'
+import WhatIsMarkdown from './lessons/ai-intro/slides/WhatIsMarkdown'
 import Block3Title from './lessons/ai-intro/slides/Block3Title'
 import TextGeneration from './lessons/ai-intro/slides/TextGeneration'
 import Classification from './lessons/ai-intro/slides/Classification'
 import Automation from './lessons/ai-intro/slides/Automation'
 import HousingExamples from './lessons/ai-intro/slides/HousingExamples'
 import Block4Title from './lessons/ai-intro/slides/Block4Title'
-import Hallucinations from './lessons/ai-intro/slides/Hallucinations'
 import Privacy from './lessons/ai-intro/slides/Privacy'
 import Block5Title from './lessons/ai-intro/slides/Block5Title'
 import Case1 from './lessons/ai-intro/slides/Case1'
@@ -53,13 +54,12 @@ const slides = [
   AutonomyLevels,
   Block2Title,
   LLMExplained,
-  WhatIsMarkdown,
+  WhatIsContext,
   NextTokenExample,
   WhatIsPrompt,
   GoodPrompt,
   OneShotFewShot,
   Hallucinations,
-  WhatIsContext,
   ContextMemory,
   RulesFileSlide,
   ExamplesFileSlide,
@@ -68,6 +68,8 @@ const slides = [
   AssistantVsAgent,
   KodikWhat,
   KodikWhyRussia,
+  PersonalOS,
+  WhatIsMarkdown,
   Block3Title,
   TextGeneration,
   Classification,
